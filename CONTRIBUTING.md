@@ -175,8 +175,9 @@ A Pull Request can only be merged into `main` when all requirements are satisfie
 - At least two team member has approved the Pull Request.
 - All requested changes have been addressed.
 - All review conversations have been resolved.
-- Required automated checks have passed, once CI is configured.
-- The changes have been tested and are ready for integration.
+- All required automated checks and CI workflows have passed.
+- The implemented changes have been properly tested and verified.
+- No unresolved critical issues or known bugs remain that affect the intended functionality.
 
 ### Merging Convention
 
