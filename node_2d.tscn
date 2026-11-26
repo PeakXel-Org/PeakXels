@@ -344,7 +344,7 @@ animations = [{
 [node name="Node2D" type="Node2D" unique_id=28858659]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1358379536]
-position = Vector2(500, 250)
+position = Vector2(592, 325)
 script = ExtResource("1_5fipt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=725871362]
