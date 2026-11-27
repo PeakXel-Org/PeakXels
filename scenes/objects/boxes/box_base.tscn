@@ -2,7 +2,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_htemk"]
 
-[node name="Box" type="StaticBody2D" unique_id=1521281305]
+[node name="Box" type="CharacterBody2D" unique_id=867321872]
+collision_layer = 4
+collision_mask = 5
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1239611284]
 
