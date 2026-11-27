@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c07d46jkiy4gr"]
+
+[ext_resource type="Script" uid="uid://ca7y7vajt6ni6" path="res://scripts/touch_controls.gd" id="1_3cjnu"]
+[ext_resource type="Texture2D" uid="uid://dbu5nt4rvvt47" path="res://assets/player/controls/buttons/DPad/DpadUp.png" id="2_w742f"]
+[ext_resource type="Texture2D" uid="uid://b0jbpudi6muwy" path="res://assets/player/controls/buttons/DPad/DpadDown.png" id="3_33kyn"]
+[ext_resource type="Texture2D" uid="uid://0uq2kxul2nd5" path="res://assets/player/controls/buttons/DPad/DpadLeft.png" id="4_efujf"]
+[ext_resource type="Texture2D" uid="uid://bvxb48xtfej87" path="res://assets/player/controls/buttons/DPad/DpadRight.png" id="5_00mc5"]
+
+[node name="TouchControls" type="CanvasLayer" unique_id=1861538237]
+script = ExtResource("1_3cjnu")
+
+[node name="Up" type="TouchScreenButton" parent="." unique_id=1061195189]
+position = Vector2(168, 552)
+scale = Vector2(0.26923078, 0.2692306)
+texture_normal = ExtResource("2_w742f")
+action = "up"
+
+[node name="Down" type="TouchScreenButton" parent="." unique_id=1477606410]
+position = Vector2(168, 664)
+scale = Vector2(0.26923078, 0.269231)
+texture_normal = ExtResource("3_33kyn")
+action = "down"
+
+[node name="Left" type="TouchScreenButton" parent="." unique_id=2110705238]
+position = Vector2(112, 608)
+scale = Vector2(0.26923078, 0.26923102)
+texture_normal = ExtResource("4_efujf")
+action = "left"
+
+[node name="Right" type="TouchScreenButton" parent="." unique_id=2040240009]
+position = Vector2(224, 608.00006)
+scale = Vector2(0.26923078, 0.26923102)
+texture_normal = ExtResource("5_00mc5")
+action = "right"
+
+[connection signal="pressed" from="Up" to="." method="_on_up_pressed"]
+[connection signal="released" from="Up" to="." method="_on_up_released"]
+[connection signal="pressed" from="Down" to="." method="_on_down_pressed"]
+[connection signal="released" from="Down" to="." method="_on_down_released"]
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="released" from="Left" to="." method="_on_left_released"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]
+[connection signal="released" from="Right" to="." method="_on_right_released"]
